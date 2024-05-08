@@ -34,7 +34,7 @@ app.get('/scan-network', async (req, res) => {
         const pingResults = await performPing();
 
         // Scan the local network subnet for pingable devices
-        const devicesCount = await scanAndPingSubnet('10.10.28'); // Base IP set for scanning
+        const devicesCount = await scanAndPingSubnet('192.168.10'); // Base IP set for scanning
 
         // Send a JSON response with the network status details
         res.json({
